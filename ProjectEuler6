@@ -1,0 +1,10 @@
+result_F = 0
+for i in range(101):
+    result_F = result_F + i**2
+
+result_G = 0
+for i in range(101):
+    result_G = result_G + i
+result_G = (result_G)**2
+
+print result_G - result_F
