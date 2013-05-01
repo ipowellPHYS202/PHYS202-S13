@@ -1,0 +1,12 @@
+import numpy as np
+
+
+
+def finiteDifference(x,y):
+    """Here I define the function to take the small slope of the line y2-y1/x2-x1 where 
+    y2-y1 is diff(y) and is small. The dydx=zeros(*args) sets the dimmension to bet that of y so our
+    derivative has the same dimmension"""
+    dydx = zeros(y.shape,float)
+    dydx[:-1] = diff(y)/diff(x)
+    dydx[-1] = (y[-1]-y[-2])/(x[-1]-x[-2])
+    return dydx
