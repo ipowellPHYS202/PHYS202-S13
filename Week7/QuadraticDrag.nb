@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[     58002,       1257]
-NotebookOptionsPosition[     56882,       1217]
-NotebookOutlinePosition[     57219,       1232]
-CellTagsIndexPosition[     57176,       1229]
+NotebookDataLength[     85464,       1884]
+NotebookOptionsPosition[     83708,       1826]
+NotebookOutlinePosition[     84046,       1841]
+CellTagsIndexPosition[     84003,       1838]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -151,7 +151,8 @@ Cell[BoxData["9.8`"], "Output",
    3.578192911898188*^9, {3.5781929582743196`*^9, 3.5781929791820307`*^9}, 
    3.578193292460557*^9, 3.57819508729845*^9, 3.578196259567627*^9, 
    3.578197519676433*^9, 3.5783236396396627`*^9, 3.5783331571043453`*^9, 
-   3.57836308736882*^9, 3.5783660446668377`*^9}],
+   3.57836308736882*^9, 3.5783660446668377`*^9, 3.5784353849335403`*^9, 
+   3.5784367054701138`*^9}],
 
 Cell[BoxData["50"], "Output",
  CellChangeTimes->{
@@ -169,7 +170,8 @@ Cell[BoxData["50"], "Output",
    3.578192911898188*^9, {3.5781929582743196`*^9, 3.5781929791820307`*^9}, 
    3.578193292460557*^9, 3.57819508729845*^9, 3.578196259567627*^9, 
    3.578197519676433*^9, 3.5783236396396627`*^9, 3.5783331571043453`*^9, 
-   3.57836308736882*^9, 3.578366044686472*^9}],
+   3.57836308736882*^9, 3.5783660446668377`*^9, 3.5784353849335403`*^9, 
+   3.578436705495078*^9}],
 
 Cell[BoxData[
  FractionBox[
@@ -189,7 +191,8 @@ Cell[BoxData[
    3.578192911898188*^9, {3.5781929582743196`*^9, 3.5781929791820307`*^9}, 
    3.578193292460557*^9, 3.57819508729845*^9, 3.578196259567627*^9, 
    3.578197519676433*^9, 3.5783236396396627`*^9, 3.5783331571043453`*^9, 
-   3.57836308736882*^9, 3.578366044711133*^9}],
+   3.57836308736882*^9, 3.5783660446668377`*^9, 3.5784353849335403`*^9, 
+   3.578436705530096*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -230,7 +233,8 @@ Cell[BoxData[
    3.578192911898188*^9, {3.5781929582743196`*^9, 3.5781929791820307`*^9}, 
    3.578193292460557*^9, 3.57819508729845*^9, 3.578196259567627*^9, 
    3.578197519676433*^9, 3.5783236396396627`*^9, 3.5783331571043453`*^9, 
-   3.57836308736882*^9, 3.578366044732273*^9}]
+   3.57836308736882*^9, 3.5783660446668377`*^9, 3.5784353849335403`*^9, 
+   3.578436705761879*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -467,7 +471,8 @@ C1L/s9LQ6/n5vF7Iod52pi7n79EXvfB/DvWYcg==
    3.578192123275773*^9}, {3.578192264924531*^9, 3.5781922933789587`*^9}, 
    3.578192982458192*^9, 3.578193294368472*^9, 3.5781950895890007`*^9, 
    3.5781962639343777`*^9, 3.578197521333679*^9, 3.578323644832769*^9, 
-   3.5783331587090797`*^9, 3.578363089966077*^9, 3.578366046375293*^9}]
+   3.5783331587090797`*^9, 3.578363089966077*^9, 3.578366046375293*^9, 
+   3.578435387008338*^9, 3.578436709394677*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -636,11 +641,11 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`tf$$ = 18., $CellContext`th$$ = 
-    0.8295149780902686, $CellContext`V$$ = 49.5, $CellContext`vter$$ = 51.2, 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+   DynamicModuleBox[{$CellContext`tf$$ = 0.01, $CellContext`th$$ = 
+    0.1, $CellContext`V$$ = 20, $CellContext`vter$$ = 30, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`V$$], 20, "Initial Velocity (m/s)"}, 20, 100}, {{
        Hold[$CellContext`vter$$], 30, "Terminal Velocity (m/s)"}, 30, 100}, {{
       
@@ -648,18 +653,18 @@ Cell[BoxData[
       Rational[1, 2] Pi}, {{
        Hold[$CellContext`tf$$], 0.01, "time elapsed (s)"}, 0.01, 18.}}, 
     Typeset`size$$ = {360., {173., 178.}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = True, $CellContext`V$766$$ = 
-    0, $CellContext`vter$767$$ = 0, $CellContext`th$768$$ = 
-    0, $CellContext`tf$769$$ = 0}, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True, $CellContext`V$1224$$ =
+     0, $CellContext`vter$1225$$ = 0, $CellContext`th$1226$$ = 
+    0, $CellContext`tf$1227$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tf$$ = 0.01, $CellContext`th$$ = 
         0.1, $CellContext`V$$ = 20, $CellContext`vter$$ = 30}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`V$$, $CellContext`V$766$$, 0], 
-        Hold[$CellContext`vter$$, $CellContext`vter$767$$, 0], 
-        Hold[$CellContext`th$$, $CellContext`th$768$$, 0], 
-        Hold[$CellContext`tf$$, $CellContext`tf$769$$, 0]}, 
+        Hold[$CellContext`V$$, $CellContext`V$1224$$, 0], 
+        Hold[$CellContext`vter$$, $CellContext`vter$1225$$, 0], 
+        Hold[$CellContext`th$$, $CellContext`th$1226$$, 0], 
+        Hold[$CellContext`tf$$, $CellContext`tf$1227$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -701,7 +706,7 @@ Cell[BoxData[
          "Labeled"}, {{$CellContext`tf$$, 0.01, "time elapsed (s)"}, 0.01, 
          18., Appearance -> "Labeled"}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{465., {255., 260.}},
+     ImageSizeCache->{453., {255., 260.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -718,7 +723,8 @@ Cell[BoxData[
    3.578193367888647*^9, 3.5781950999188833`*^9, 3.578196268795361*^9, {
    3.578197503934898*^9, 3.57819752375526*^9}, 3.5783235530822697`*^9, 
    3.578323653304781*^9, {3.578333151850472*^9, 3.5783331652335987`*^9}, 
-   3.578363095194275*^9, 3.578366049293871*^9}]
+   3.578363095194275*^9, 3.578366049293871*^9, 3.5784353902456284`*^9, 
+   3.578436712772257*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -823,14 +829,14 @@ Cell[BoxData[
       RowBox[{"{", 
        RowBox[{
        "V", ",", " ", "20", ",", " ", "\"\<Initial Velocity (m/s)\>\""}], 
-       "}"}], ",", " ", "20", ",", "100", ",", " ", 
+       "}"}], ",", " ", "20", ",", "150", ",", " ", 
       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
      ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
        RowBox[{"vter", ",", "30", ",", "\"\<Terminal Velocity (m/s)\>\""}], 
-       "}"}], ",", "30", ",", "100", ",", 
+       "}"}], ",", "30", ",", "150", ",", 
       RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
     RowBox[{"{", 
      RowBox[{
@@ -853,35 +859,35 @@ Cell[BoxData[
    3.578195343763917*^9, 3.578195432680625*^9}, {3.5781954683169622`*^9, 
    3.578195504471294*^9}, {3.578195591797909*^9, 3.578195937462728*^9}, {
    3.578197544230822*^9, 3.578197583801723*^9}, {3.578197869162573*^9, 
-   3.5781978731841784`*^9}}],
+   3.5781978731841784`*^9}, {3.57843693120642*^9, 3.578436935843464*^9}}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`tf$$ = 9.84, $CellContext`th$$ = 
-    0.6177203070318035, $CellContext`V$$ = 51.3, $CellContext`vter$$ = 
-    57.400000000000006`, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`V$$], 20, "Initial Velocity (m/s)"}, 20, 100}, {{
-       Hold[$CellContext`vter$$], 30, "Terminal Velocity (m/s)"}, 30, 100}, {{
+   DynamicModuleBox[{$CellContext`tf$$ = 0.01, $CellContext`th$$ = 
+    0.1, $CellContext`V$$ = 20, $CellContext`vter$$ = 30, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`V$$], 20, "Initial Velocity (m/s)"}, 20, 150}, {{
+       Hold[$CellContext`vter$$], 30, "Terminal Velocity (m/s)"}, 30, 150}, {{
       
        Hold[$CellContext`th$$], 0.1, "initial angle (rad)"}, 0.1, 
       Rational[1, 2] Pi}, {{
        Hold[$CellContext`tf$$], 0.01, "time elapsed (s)"}, 0.01, 18.}}, 
     Typeset`size$$ = {360., {173., 178.}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = True, $CellContext`V$1058$$ =
-     0, $CellContext`vter$1059$$ = 0, $CellContext`th$1060$$ = 
-    0, $CellContext`tf$1061$$ = 0}, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True, $CellContext`V$1848$$ =
+     0, $CellContext`vter$1849$$ = 0, $CellContext`th$1850$$ = 
+    0, $CellContext`tf$1851$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tf$$ = 0.01, $CellContext`th$$ = 
         0.1, $CellContext`V$$ = 20, $CellContext`vter$$ = 30}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`V$$, $CellContext`V$1058$$, 0], 
-        Hold[$CellContext`vter$$, $CellContext`vter$1059$$, 0], 
-        Hold[$CellContext`th$$, $CellContext`th$1060$$, 0], 
-        Hold[$CellContext`tf$$, $CellContext`tf$1061$$, 0]}, 
+        Hold[$CellContext`V$$, $CellContext`V$1848$$, 0], 
+        Hold[$CellContext`vter$$, $CellContext`vter$1849$$, 0], 
+        Hold[$CellContext`th$$, $CellContext`th$1850$$, 0], 
+        Hold[$CellContext`tf$$, $CellContext`tf$1851$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -915,15 +921,15 @@ Cell[BoxData[
             $CellContext`y[$CellContext`t]}, $CellContext`sol$]], \
 {$CellContext`t, 0, $CellContext`tf$$}, PlotRange -> {0, 350}]], 
       "Specifications" :> {{{$CellContext`V$$, 20, "Initial Velocity (m/s)"}, 
-         20, 100, Appearance -> 
+         20, 150, Appearance -> 
          "Labeled"}, {{$CellContext`vter$$, 30, "Terminal Velocity (m/s)"}, 
-         30, 100, Appearance -> 
+         30, 150, Appearance -> 
          "Labeled"}, {{$CellContext`th$$, 0.1, "initial angle (rad)"}, 0.1, 
          Rational[1, 2] Pi, Appearance -> 
          "Labeled"}, {{$CellContext`tf$$, 0.01, "time elapsed (s)"}, 0.01, 
          18., Appearance -> "Labeled"}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{457., {255., 260.}},
+     ImageSizeCache->{453., {255., 260.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -938,14 +944,12 @@ Cell[BoxData[
    3.5781956283112097`*^9}, {3.5781957199181747`*^9, 3.578195795541377*^9}, {
    3.57819585953786*^9, 3.578195938853644*^9}, 3.5781975520487127`*^9, 
    3.578197584301032*^9, 3.578197873937333*^9, 3.578323545918344*^9, 
-   3.578363107799018*^9}]
+   3.578363107799018*^9, 3.578436716026156*^9, 3.578436936525674*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.578176167715363*^9, 3.578176183187763*^9}, {
    3.578176220040711*^9, 3.578176220252585*^9}, 3.578176315085004*^9}],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
@@ -1065,19 +1069,19 @@ Cell[BoxData[
       RowBox[{"{", 
        RowBox[{
        "V", ",", " ", "20", ",", " ", "\"\<Initial Velocity (m/s)\>\""}], 
-       "}"}], ",", " ", "20", ",", "100", ",", " ", 
+       "}"}], ",", " ", "20", ",", "150", ",", " ", 
       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}],
      ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
        RowBox[{"vter", ",", "30", ",", "\"\<Terminal Velocity (m/s)\>\""}], 
-       "}"}], ",", "30", ",", "100", ",", 
+       "}"}], ",", "30", ",", "150", ",", 
       RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"th", ",", ".1", ",", "\"\<init1ial angle (rad)\>\""}], "}"}], 
+       RowBox[{"th", ",", ".1", ",", "\"\<initial angle (rad)\>\""}], "}"}], 
       ",", ".1", ",", 
       RowBox[{"\[Pi]", "/", "2"}], ",", 
       RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
@@ -1101,38 +1105,40 @@ Cell[BoxData[
    3.578333580460075*^9}, {3.5783336264111643`*^9, 3.578333680193344*^9}, {
    3.578333732995167*^9, 3.578333873084364*^9}, {3.578333937523246*^9, 
    3.5783339599462214`*^9}, {3.578333991349967*^9, 3.578334024347726*^9}, 
-   3.578363564104467*^9}],
+   3.578363564104467*^9, {3.578436941273505*^9, 3.5784369444717007`*^9}, 
+   3.578437049854686*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`tf$$ = 0.01, $CellContext`th$$ = 
-    0.1, $CellContext`V$$ = 20, $CellContext`vter$$ = 30, $CellContext`y0$$ = 
-    0, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+   DynamicModuleBox[{$CellContext`tf$$ = 25., $CellContext`th$$ = 
+    1.394300767579509, $CellContext`V$$ = 64.4, $CellContext`vter$$ = 
+    60.2, $CellContext`y0$$ = 2, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`y0$$], 0, "Initial Height (m)"}, 0, 100}, {{
-       Hold[$CellContext`V$$], 20, "Initial Velocity (m/s)"}, 20, 100}, {{
-       Hold[$CellContext`vter$$], 30, "Terminal Velocity (m/s)"}, 30, 100}, {{
+       Hold[$CellContext`V$$], 20, "Initial Velocity (m/s)"}, 20, 150}, {{
+       Hold[$CellContext`vter$$], 30, "Terminal Velocity (m/s)"}, 30, 150}, {{
       
        Hold[$CellContext`th$$], 0.1, "init1ial angle (rad)"}, 0.1, 
       Rational[1, 2] Pi}, {{
        Hold[$CellContext`tf$$], 0.01, "time elapsed (s)"}, 0.01, 25.}}, 
     Typeset`size$$ = {360., {169., 173.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`y0$2441$$ = 0, $CellContext`V$2442$$ = 
-    0, $CellContext`vter$2443$$ = 0, $CellContext`th$2444$$ = 
-    0, $CellContext`tf$2445$$ = 0}, 
+    True, $CellContext`y0$1912$$ = 0, $CellContext`V$1913$$ = 
+    0, $CellContext`vter$1914$$ = 0, $CellContext`th$1915$$ = 
+    0, $CellContext`tf$1916$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`tf$$ = 0.01, $CellContext`th$$ = 
         0.1, $CellContext`V$$ = 20, $CellContext`vter$$ = 
         30, $CellContext`y0$$ = 0}, "ControllerVariables" :> {
-        Hold[$CellContext`y0$$, $CellContext`y0$2441$$, 0], 
-        Hold[$CellContext`V$$, $CellContext`V$2442$$, 0], 
-        Hold[$CellContext`vter$$, $CellContext`vter$2443$$, 0], 
-        Hold[$CellContext`th$$, $CellContext`th$2444$$, 0], 
-        Hold[$CellContext`tf$$, $CellContext`tf$2445$$, 0]}, 
+        Hold[$CellContext`y0$$, $CellContext`y0$1912$$, 0], 
+        Hold[$CellContext`V$$, $CellContext`V$1913$$, 0], 
+        Hold[$CellContext`vter$$, $CellContext`vter$1914$$, 0], 
+        Hold[$CellContext`th$$, $CellContext`th$1915$$, 0], 
+        Hold[$CellContext`tf$$, $CellContext`tf$1916$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1172,10 +1178,562 @@ $CellContext`V$$ Sin[$CellContext`th$$] $CellContext`t -
       "Specifications" :> {{{$CellContext`y0$$, 0, "Initial Height (m)"}, 0, 
          100, Appearance -> 
          "Labeled"}, {{$CellContext`V$$, 20, "Initial Velocity (m/s)"}, 20, 
-         100, Appearance -> 
+         150, Appearance -> 
          "Labeled"}, {{$CellContext`vter$$, 30, "Terminal Velocity (m/s)"}, 
-         30, 100, Appearance -> 
+         30, 150, Appearance -> 
          "Labeled"}, {{$CellContext`th$$, 0.1, "init1ial angle (rad)"}, 0.1, 
+         Rational[1, 2] Pi, Appearance -> 
+         "Labeled"}, {{$CellContext`tf$$, 0.01, "time elapsed (s)"}, 0.01, 
+         25., Appearance -> "Labeled"}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{453., {276., 281.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.578437851396915*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`tf$$ = 25., $CellContext`th$$ = 
+    1.394300767579509, $CellContext`V$$ = 67.2, $CellContext`vter$$ = 
+    60.2, $CellContext`y0$$ = 2, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`y0$$], 2, "Initial Height (m)"}, 0, 100}, {{
+       Hold[$CellContext`V$$], 62.800000000000004`, "Initial Velocity (m/s)"},
+       20, 150}, {{
+       Hold[$CellContext`vter$$], 60.2, "Terminal Velocity (m/s)"}, 30, 
+      150}, {{
+       Hold[$CellContext`th$$], 1.394300767579509, "init1ial angle (rad)"}, 
+      0.1, Rational[1, 2] Pi}, {{
+       Hold[$CellContext`tf$$], 25., "time elapsed (s)"}, 0.01, 25.}}, 
+    Typeset`size$$ = {360., {169., 173.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`y0$4987$$ = 0, $CellContext`V$4988$$ = 
+    0, $CellContext`vter$4989$$ = 0, $CellContext`th$4990$$ = 
+    0, $CellContext`tf$4991$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`tf$$ = 25., $CellContext`th$$ = 
+        1.394300767579509, $CellContext`V$$ = 
+        62.800000000000004`, $CellContext`vter$$ = 60.2, $CellContext`y0$$ = 
+        2}, "ControllerVariables" :> {
+        Hold[$CellContext`y0$$, $CellContext`y0$4987$$, 0], 
+        Hold[$CellContext`V$$, $CellContext`V$4988$$, 0], 
+        Hold[$CellContext`vter$$, $CellContext`vter$4989$$, 0], 
+        Hold[$CellContext`th$$, $CellContext`th$4990$$, 0], 
+        Hold[$CellContext`tf$$, $CellContext`tf$4991$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`sol$ = 
+         NDSolve[{
+           Derivative[
+             2][$CellContext`x][$CellContext`t] == ((-$CellContext`g) (
+               Derivative[
+                1][$CellContext`x][$CellContext`t]/$CellContext`vter$$^2)) 
+             Sqrt[Derivative[1][$CellContext`x][$CellContext`t]^2 + 
+               Derivative[1][$CellContext`y][$CellContext`t]^2], 
+            Derivative[
+             2][$CellContext`y][$CellContext`t] == (-$CellContext`g) (
+              1 + (Derivative[
+                 1][$CellContext`y][$CellContext`t]/$CellContext`vter$$^2) 
+               Sqrt[Derivative[1][$CellContext`x][$CellContext`t]^2 + 
+                 Derivative[
+                   1][$CellContext`y][$CellContext`t]^2]), {$CellContext`y[
+              0] == $CellContext`y0$$, $CellContext`x[0] == 0}, {
+            Derivative[1][$CellContext`y][0] == $CellContext`V$$ 
+              Sin[$CellContext`th$$], 
+             Derivative[1][$CellContext`x][0] == $CellContext`V$$ 
+              Cos[$CellContext`th$$]}}, {$CellContext`x, $CellContext`y}, \
+{$CellContext`t, 0, 200}]}, 
+        ParametricPlot[{
+          Evaluate[
+           ReplaceAll[{
+             $CellContext`x[$CellContext`t], 
+             $CellContext`y[$CellContext`t]}, $CellContext`sol$]], \
+{$CellContext`V$$ 
+           Cos[$CellContext`th$$] $CellContext`t, $CellContext`y0$$ + \
+$CellContext`V$$ Sin[$CellContext`th$$] $CellContext`t - 
+           0.5 $CellContext`g $CellContext`t^2}}, {$CellContext`t, 
+          0, $CellContext`tf$$}, PlotRange -> {0, 1000}]], 
+      "Specifications" :> {{{$CellContext`y0$$, 2, "Initial Height (m)"}, 0, 
+         100, Appearance -> 
+         "Labeled"}, {{$CellContext`V$$, 62.800000000000004`, 
+          "Initial Velocity (m/s)"}, 20, 150, Appearance -> 
+         "Labeled"}, {{$CellContext`vter$$, 60.2, "Terminal Velocity (m/s)"}, 
+         30, 150, Appearance -> 
+         "Labeled"}, {{$CellContext`th$$, 1.394300767579509, 
+          "init1ial angle (rad)"}, 0.1, Rational[1, 2] Pi, Appearance -> 
+         "Labeled"}, {{$CellContext`tf$$, 25., "time elapsed (s)"}, 0.01, 25.,
+          Appearance -> "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     
+     ImageSizeCache->{453., {276., 281.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.578438027741572*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`tf$$ = 25., $CellContext`th$$ = 
+    1.394300767579509, $CellContext`V$$ = 98.2, $CellContext`vter$$ = 
+    43., $CellContext`y0$$ = 1.4000000000000001`, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`y0$$], 2, "Initial Height (m)"}, 0, 100}, {{
+       Hold[$CellContext`V$$], 73., "Initial Velocity (m/s)"}, 20, 150}, {{
+       Hold[$CellContext`vter$$], 60.2, "Terminal Velocity (m/s)"}, 30, 
+      150}, {{
+       Hold[$CellContext`th$$], 1.394300767579509, "init1ial angle (rad)"}, 
+      0.1, Rational[1, 2] Pi}, {{
+       Hold[$CellContext`tf$$], 25., "time elapsed (s)"}, 0.01, 25.}}, 
+    Typeset`size$$ = {360., {169., 173.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`y0$6265$$ = 0, $CellContext`V$6266$$ = 
+    0, $CellContext`vter$6267$$ = 0, $CellContext`th$6268$$ = 
+    0, $CellContext`tf$6269$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`tf$$ = 25., $CellContext`th$$ = 
+        1.394300767579509, $CellContext`V$$ = 73., $CellContext`vter$$ = 
+        60.2, $CellContext`y0$$ = 2}, "ControllerVariables" :> {
+        Hold[$CellContext`y0$$, $CellContext`y0$6265$$, 0], 
+        Hold[$CellContext`V$$, $CellContext`V$6266$$, 0], 
+        Hold[$CellContext`vter$$, $CellContext`vter$6267$$, 0], 
+        Hold[$CellContext`th$$, $CellContext`th$6268$$, 0], 
+        Hold[$CellContext`tf$$, $CellContext`tf$6269$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`sol$ = 
+         NDSolve[{
+           Derivative[
+             2][$CellContext`x][$CellContext`t] == ((-$CellContext`g) (
+               Derivative[
+                1][$CellContext`x][$CellContext`t]/$CellContext`vter$$^2)) 
+             Sqrt[Derivative[1][$CellContext`x][$CellContext`t]^2 + 
+               Derivative[1][$CellContext`y][$CellContext`t]^2], 
+            Derivative[
+             2][$CellContext`y][$CellContext`t] == (-$CellContext`g) (
+              1 + (Derivative[
+                 1][$CellContext`y][$CellContext`t]/$CellContext`vter$$^2) 
+               Sqrt[Derivative[1][$CellContext`x][$CellContext`t]^2 + 
+                 Derivative[
+                   1][$CellContext`y][$CellContext`t]^2]), {$CellContext`y[
+              0] == $CellContext`y0$$, $CellContext`x[0] == 0}, {
+            Derivative[1][$CellContext`y][0] == $CellContext`V$$ 
+              Sin[$CellContext`th$$], 
+             Derivative[1][$CellContext`x][0] == $CellContext`V$$ 
+              Cos[$CellContext`th$$]}}, {$CellContext`x, $CellContext`y}, \
+{$CellContext`t, 0, 200}]}, 
+        ParametricPlot[{
+          Evaluate[
+           ReplaceAll[{
+             $CellContext`x[$CellContext`t], 
+             $CellContext`y[$CellContext`t]}, $CellContext`sol$]], \
+{$CellContext`V$$ 
+           Cos[$CellContext`th$$] $CellContext`t, $CellContext`y0$$ + \
+$CellContext`V$$ Sin[$CellContext`th$$] $CellContext`t - 
+           0.5 $CellContext`g $CellContext`t^2}}, {$CellContext`t, 
+          0, $CellContext`tf$$}, PlotRange -> {0, 1000}]], 
+      "Specifications" :> {{{$CellContext`y0$$, 2, "Initial Height (m)"}, 0, 
+         100, Appearance -> 
+         "Labeled"}, {{$CellContext`V$$, 73., "Initial Velocity (m/s)"}, 20, 
+         150, Appearance -> 
+         "Labeled"}, {{$CellContext`vter$$, 60.2, "Terminal Velocity (m/s)"}, 
+         30, 150, Appearance -> 
+         "Labeled"}, {{$CellContext`th$$, 1.394300767579509, 
+          "init1ial angle (rad)"}, 0.1, Rational[1, 2] Pi, Appearance -> 
+         "Labeled"}, {{$CellContext`tf$$, 25., "time elapsed (s)"}, 0.01, 25.,
+          Appearance -> "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     
+     ImageSizeCache->{453., {264., 269.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.5784380290452137`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"m", "  ", 
+    RowBox[{"(*", 
+     RowBox[{"6", ",", "75", ",", ".046", ",", ".145"}], "*)"}], ";"}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"A", "  ", 
+    RowBox[{"(*", 
+     RowBox[{
+      RowBox[{"9.9", "*", 
+       RowBox[{"10", "^", 
+        RowBox[{"-", "3"}]}]}], ",", 
+      RowBox[{
+       RowBox[{"9.9", "e"}], "-", "3"}], ",", ".7", ",", 
+      RowBox[{
+       RowBox[{"1.4", "e"}], "-", "5"}], ",", 
+      RowBox[{
+       RowBox[{"4.2", "e"}], "-", "3"}]}], "*)"}], ";"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"VTERMINAL", " ", 
+    RowBox[{"(*", 
+     RowBox[{"135", ",", "60", ",", "44", ",", "43"}], "*)"}], ";"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"y00", "  ", 
+    RowBox[{"(*", 
+     RowBox[{"1", ",", "2", ",", "0", ",", "1.5"}], "*)"}], ";"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"vter", " ", "\[Equal]", " ", 
+     RowBox[{"{", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"2", " ", "m", " ", 
+        RowBox[{"g", "/", 
+         RowBox[{"(", 
+          RowBox[{"C", " ", "R", " ", "A"}], ")"}]}]}], "]"}], "}"}]}], ";"}],
+    "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"DATA", " ", "=", " ", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Civil War Cannonball\>\"", ",", "\"\<Human Cannonball\>\"", ",", 
+         " ", "\"\<Golfball\>\"", ",", "\"\<Baseball\>\""}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<Initial Speed\>\"", " ", "\"\<(m/s)\>\""}], ",", " ", 
+         "50", ",", "63.4", ",", "93.6", ",", "98.2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<Initial Angle\>\"", " ", "\"\<(rads)\>\""}], ",", " ", 
+         "1.4", ",", "1.4", ",", "1.4", ",", "1.4"}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Without Air Resistance(m)\>\"", " ", ",", " ", "96", ",", "153", 
+         ",", "310", ",", "340"}], "}"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Grid", "[", "DATA", "]"}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.578176306787018*^9, 3.578176308699684*^9}, {
+  3.578366246415331*^9, 3.5783663215627327`*^9}, {3.5784354273231983`*^9, 
+  3.578435430950004*^9}, {3.578435495498204*^9, 3.578435502542715*^9}, {
+  3.578435547219365*^9, 3.578435835224354*^9}, {3.5784360030109987`*^9, 
+  3.5784362848981028`*^9}, {3.5784368724477253`*^9, 3.578436886521604*^9}, {
+  3.578437093993415*^9, 3.578437134626555*^9}, {3.578437200727193*^9, 
+  3.578437226325572*^9}, {3.578437869753911*^9, 3.578437885997211*^9}, {
+  3.578437942818758*^9, 3.578437964093754*^9}, {3.578438052511013*^9, 
+  3.578438054122488*^9}, {3.578438102253078*^9, 3.578438109957698*^9}, {
+  3.5784381637006187`*^9, 3.578438196721162*^9}, {3.578438293420047*^9, 
+  3.578438326826908*^9}, {3.578439336867408*^9, 3.578439365802457*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Civil War Cannonball\"\>", "\<\"Human Cannonball\"\>", \
+"\<\"Golfball\"\>", "\<\"Baseball\"\>", ""},
+    {
+     RowBox[{"\<\"Initial Speed\"\>", " ", "\<\"(m/s)\"\>"}], "50", "63.4`", 
+     "93.6`", "98.2`"},
+    {
+     RowBox[{"\<\"Initial Angle\"\>", " ", "\<\"(rads)\"\>"}], "1.4`", "1.4`",
+      "1.4`", "1.4`"},
+    {"\<\"Without Air Resistance(m)\"\>", "96", "153", "310", "340"}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  3.578436184149756*^9, {3.578436233763763*^9, 3.578436252398158*^9}, 
+   3.578436286143502*^9, 3.578436722438884*^9, 3.578436886996994*^9, {
+   3.5784383222825403`*^9, 3.57843832734134*^9}, 3.578439379862018*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"V_initial", " ", "=", " ", 
+    RowBox[{"439", 
+     RowBox[{"m", "/", "s"}]}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Pi", "/", "36"}], "\[IndentingNewLine]", 
+   RowBox[{"Pi", "/", "18"}], "\[IndentingNewLine]", 
+   RowBox[{"Pi", "/", "12"}], "\[IndentingNewLine]", 
+   RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Module", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"sol", " ", "=", " ", 
+         RowBox[{"NDSolve", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{
+               RowBox[{"x", "''"}], "[", "t", "]"}], "\[Equal]", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "g"}], " ", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"x", "'"}], "[", "t", "]"}], "/", 
+                  RowBox[{"vter", "^", "2"}]}]}], ")"}], " ", 
+               RowBox[{"Sqrt", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"x", "'"}], "[", "t", "]"}], "^", "2"}], "+", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"y", "'"}], "[", "t", "]"}], "^", "2"}]}], 
+                "]"}]}]}], ",", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"y", "''"}], "[", "t", "]"}], " ", "\[Equal]", 
+              RowBox[{
+               RowBox[{"-", "g"}], " ", 
+               RowBox[{"(", 
+                RowBox[{"1", "+", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"y", "'"}], "[", "t", "]"}], "/", 
+                    RowBox[{"vter", "^", "2"}]}], ")"}], " ", 
+                  RowBox[{"Sqrt", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"x", "'"}], "[", "t", "]"}], "^", "2"}], "+", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"y", "'"}], "[", "t", "]"}], "^", "2"}]}], 
+                   "]"}]}]}], ")"}]}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"y", "[", "0", "]"}], " ", "\[Equal]", " ", "y0"}], 
+               ",", " ", 
+               RowBox[{
+                RowBox[{"x", "[", "0", "]"}], " ", "\[Equal]", "0"}]}], "}"}],
+              ",", " ", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{"y", "'"}], "[", "0", "]"}], " ", "\[Equal]", " ", 
+                RowBox[{"V", " ", 
+                 RowBox[{"Sin", "[", "th", "]"}]}]}], ",", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"x", "'"}], "[", "0", "]"}], " ", "\[Equal]", 
+                RowBox[{"V", " ", 
+                 RowBox[{"Cos", "[", "th", "]"}]}]}]}], "}"}]}], "}"}], ",", 
+           " ", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"t", ",", "0", ",", "200"}], "}"}]}], "]"}]}], "}"}], ",",
+        "\[IndentingNewLine]", 
+       RowBox[{"ParametricPlot", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Evaluate", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"x", "[", "t", "]"}], ",", 
+               RowBox[{"y", "[", "t", "]"}]}], "}"}], "/.", "sol"}], "]"}], 
+           ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"V", " ", 
+              RowBox[{"Cos", "[", "th", "]"}], " ", "t"}], ",", " ", 
+             RowBox[{"y0", " ", "+", " ", 
+              RowBox[{"V", " ", 
+               RowBox[{"Sin", "[", "th", "]"}], " ", "t"}], " ", "-", 
+              RowBox[{".5", " ", "g", " ", 
+               RowBox[{"t", "^", "2"}]}]}]}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "0", ",", "tf"}], "}"}], ",", " ", 
+         RowBox[{"PlotRange", "\[Rule]", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "1000"}], "}"}]}]}], "]"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"y0", ",", " ", "0", ",", " ", "\"\<Initial Height (m)\>\""}],
+         "}"}], ",", " ", "0", ",", "100", ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "V", ",", " ", "20", ",", " ", "\"\<Initial Velocity (m/s)\>\""}], 
+        "}"}], ",", " ", "20", ",", "439", ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"vter", ",", "30", ",", "\"\<Terminal Velocity (m/s)\>\""}], 
+        "}"}], ",", "30", ",", "135", ",", 
+       RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"th", ",", ".1", ",", "\"\<initial angle (rad)\>\""}], "}"}], 
+       ",", ".1", ",", 
+       RowBox[{"\[Pi]", "/", "2"}], ",", 
+       RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"tf", ",", "0.01", ",", "\"\<time elapsed (s)\>\""}], "}"}], 
+       ",", "0.01", ",", "25.", ",", 
+       RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}]}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.578176144403405*^9, 3.578176147362155*^9}, {
+   3.5784393949396267`*^9, 3.578439535082823*^9}, {3.5784395672149887`*^9, 
+   3.578439580460474*^9}, {3.578439685014172*^9, 3.578439708154415*^9}, 
+   3.5784403188820887`*^9, {3.57844035235532*^9, 3.578440376516436*^9}}],
+
+Cell[BoxData[
+ FractionBox["\[Pi]", "36"]], "Output",
+ CellChangeTimes->{{3.5784394920084352`*^9, 3.5784395054986486`*^9}, 
+   3.578439535682581*^9, 3.578439581108408*^9, {3.578439686138438*^9, 
+   3.578439708999257*^9}, 3.578440319390313*^9, {3.578440359738269*^9, 
+   3.578440377362114*^9}}],
+
+Cell[BoxData[
+ FractionBox["\[Pi]", "18"]], "Output",
+ CellChangeTimes->{{3.5784394920084352`*^9, 3.5784395054986486`*^9}, 
+   3.578439535682581*^9, 3.578439581108408*^9, {3.578439686138438*^9, 
+   3.578439708999257*^9}, 3.578440319390313*^9, {3.578440359738269*^9, 
+   3.578440377408186*^9}}],
+
+Cell[BoxData[
+ FractionBox["\[Pi]", "12"]], "Output",
+ CellChangeTimes->{{3.5784394920084352`*^9, 3.5784395054986486`*^9}, 
+   3.578439535682581*^9, 3.578439581108408*^9, {3.578439686138438*^9, 
+   3.578439708999257*^9}, 3.578440319390313*^9, {3.578440359738269*^9, 
+   3.5784403774304256`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`tf$$ = 25., $CellContext`th$$ = 
+    0.1, $CellContext`V$$ = 20, $CellContext`vter$$ = 30, $CellContext`y0$$ = 
+    0, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`y0$$], 0, "Initial Height (m)"}, 0, 100}, {{
+       Hold[$CellContext`V$$], 20, "Initial Velocity (m/s)"}, 20, 439}, {{
+       Hold[$CellContext`vter$$], 30, "Terminal Velocity (m/s)"}, 30, 135}, {{
+      
+       Hold[$CellContext`th$$], 0.1, "initial angle (rad)"}, 0.1, 
+      Rational[1, 2] Pi}, {{
+       Hold[$CellContext`tf$$], 0.01, "time elapsed (s)"}, 0.01, 25.}}, 
+    Typeset`size$$ = {360., {169., 173.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`y0$12213$$ = 0, $CellContext`V$12214$$ = 
+    0, $CellContext`vter$12215$$ = 0, $CellContext`th$12216$$ = 
+    0, $CellContext`tf$12217$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`tf$$ = 0.01, $CellContext`th$$ = 
+        0.1, $CellContext`V$$ = 20, $CellContext`vter$$ = 
+        30, $CellContext`y0$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`y0$$, $CellContext`y0$12213$$, 0], 
+        Hold[$CellContext`V$$, $CellContext`V$12214$$, 0], 
+        Hold[$CellContext`vter$$, $CellContext`vter$12215$$, 0], 
+        Hold[$CellContext`th$$, $CellContext`th$12216$$, 0], 
+        Hold[$CellContext`tf$$, $CellContext`tf$12217$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`sol$ = 
+         NDSolve[{
+           Derivative[
+             2][$CellContext`x][$CellContext`t] == ((-$CellContext`g) (
+               Derivative[
+                1][$CellContext`x][$CellContext`t]/$CellContext`vter$$^2)) 
+             Sqrt[Derivative[1][$CellContext`x][$CellContext`t]^2 + 
+               Derivative[1][$CellContext`y][$CellContext`t]^2], 
+            Derivative[
+             2][$CellContext`y][$CellContext`t] == (-$CellContext`g) (
+              1 + (Derivative[
+                 1][$CellContext`y][$CellContext`t]/$CellContext`vter$$^2) 
+               Sqrt[Derivative[1][$CellContext`x][$CellContext`t]^2 + 
+                 Derivative[
+                   1][$CellContext`y][$CellContext`t]^2]), {$CellContext`y[
+              0] == $CellContext`y0$$, $CellContext`x[0] == 0}, {
+            Derivative[1][$CellContext`y][0] == $CellContext`V$$ 
+              Sin[$CellContext`th$$], 
+             Derivative[1][$CellContext`x][0] == $CellContext`V$$ 
+              Cos[$CellContext`th$$]}}, {$CellContext`x, $CellContext`y}, \
+{$CellContext`t, 0, 200}]}, 
+        ParametricPlot[{
+          Evaluate[
+           ReplaceAll[{
+             $CellContext`x[$CellContext`t], 
+             $CellContext`y[$CellContext`t]}, $CellContext`sol$]], \
+{$CellContext`V$$ 
+           Cos[$CellContext`th$$] $CellContext`t, $CellContext`y0$$ + \
+$CellContext`V$$ Sin[$CellContext`th$$] $CellContext`t - 
+           0.5 $CellContext`g $CellContext`t^2}}, {$CellContext`t, 
+          0, $CellContext`tf$$}, PlotRange -> {0, 1000}]], 
+      "Specifications" :> {{{$CellContext`y0$$, 0, "Initial Height (m)"}, 0, 
+         100, Appearance -> 
+         "Labeled"}, {{$CellContext`V$$, 20, "Initial Velocity (m/s)"}, 20, 
+         439, Appearance -> 
+         "Labeled"}, {{$CellContext`vter$$, 30, "Terminal Velocity (m/s)"}, 
+         30, 135, Appearance -> 
+         "Labeled"}, {{$CellContext`th$$, 0.1, "initial angle (rad)"}, 0.1, 
          Rational[1, 2] Pi, Appearance -> 
          "Labeled"}, {{$CellContext`tf$$, 0.01, "time elapsed (s)"}, 0.01, 
          25., Appearance -> "Labeled"}}, "Options" :> {}, 
@@ -1190,33 +1748,84 @@ $CellContext`V$$ Sin[$CellContext`th$$] $CellContext`t -
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{
-  3.578333681640934*^9, 3.578333828331407*^9, 3.5783338743986807`*^9, {
-   3.578333939705173*^9, 3.578333960535076*^9}, {3.578333996883383*^9, 
-   3.578334025172966*^9}, 3.57836311946486*^9, 3.578366132312624*^9}]
+ CellChangeTimes->{{3.5784394920084352`*^9, 3.5784395054986486`*^9}, 
+   3.578439535682581*^9, 3.578439581108408*^9, {3.578439686138438*^9, 
+   3.578439708999257*^9}, 3.578440319390313*^9, {3.578440359738269*^9, 
+   3.5784403774737988`*^9}}]
 }, Open  ]],
 
-Cell[BoxData[{
- RowBox[{"m", " ", "=", " ", "6"}], "\[IndentingNewLine]", 
- RowBox[{"A", " ", "=", " ", 
-  RowBox[{"9.9", "*", 
-   RowBox[{"10", "^", 
-    RowBox[{"-", "3"}]}]}]}], "\[IndentingNewLine]", 
- RowBox[{"vter", " ", "\[Equal]", " ", 
-  RowBox[{"Sqrt", "[", 
-   RowBox[{"2", " ", "m", " ", 
-    RowBox[{"g", "/", 
-     RowBox[{"(", 
-      RowBox[{"C", " ", "R", " ", "A"}], ")"}]}]}], 
-   "]"}]}], "\[IndentingNewLine]"}], "Input",
- CellChangeTimes->{{3.578176306787018*^9, 3.578176308699684*^9}, {
-  3.578366246415331*^9, 3.5783663215627327`*^9}}],
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DATUM", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<angle(degrees)\>\"", ",", "\"\<distance (m)\>\""}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "1720"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "2300"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"15", ",", "2600"}], "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.578439629512673*^9, 3.578439661880166*^9}, {
+  3.578439752541094*^9, 3.578439777490456*^9}, {3.578439851798602*^9, 
+  3.578439994955811*^9}, {3.578440057929803*^9, 3.578440058317368*^9}}],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.578176144403405*^9, 3.578176147362155*^9}}]
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", "DATUM", "]"}]], "Input",
+ CellChangeTimes->{{3.578439997258472*^9, 3.5784399986257067`*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"angle(degrees)\"\>", "\<\"distance (m)\"\>"},
+    {"5", "1720"},
+    {"10", "2300"},
+    {"15", "2600"}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.5784399990937643`*^9, 3.5784400611087027`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Vinitial", " ", "~", " ", "280"}], " ", 
+     RowBox[{"m", "/", "s"}], " ", "for", " ", "the", " ", "range", " ", "to",
+      " ", "be", " ", "within", " ", "1", "km", " ", "for", " ", "initial", 
+     " ", "angle"}], "=", 
+    RowBox[{"5", " ", "degrees"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Vinitial", " ", "~", " ", "207"}], " ", 
+     RowBox[{"m", "/", "s"}], " ", "for", " ", "the", " ", "range", " ", "to",
+      " ", "be", " ", "within", " ", "1", "km", " ", "for", " ", "initial", 
+     " ", "angle"}], "=", 
+    RowBox[{"10", " ", "degrees"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Vinitial", " ", "~", " ", "170"}], " ", 
+     RowBox[{"m", "/", "s"}], " ", "for", " ", "the", " ", "range", " ", "to",
+      " ", "be", " ", "within", " ", "1", "km", " ", "for", " ", "initial", 
+     " ", "angle"}], "=", 
+    RowBox[{"15", " ", "degrees"}]}], "*)"}]}]], "Input",
+ CellChangeTimes->{{3.5784400877972803`*^9, 3.57844012769766*^9}, {
+  3.578440188270253*^9, 3.578440302146204*^9}, {3.578440386949156*^9, 
+  3.578440408251745*^9}}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.578440206783052*^9}]
 },
 WindowSize->{799, 739},
-WindowMargins->{{Automatic, -102}, {Automatic, 0}},
+WindowMargins->{{126, Automatic}, {-33, Automatic}},
 FrontEndVersion->"8.0 for Linux x86 (64-bit) (October 10, 2011)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1233,32 +1842,50 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[567, 22, 4757, 113, 202, "Input"],
-Cell[5327, 137, 1128, 16, 30, "Output"],
-Cell[6458, 155, 1124, 16, 30, "Output"],
-Cell[7585, 173, 1170, 18, 47, "Output"],
-Cell[8758, 193, 1740, 39, 50, "Output"]
+Cell[5327, 137, 1180, 17, 30, "Output"],
+Cell[6510, 156, 1176, 17, 30, "Output"],
+Cell[7689, 175, 1222, 19, 47, "Output"],
+Cell[8914, 196, 1792, 40, 50, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10535, 237, 1823, 32, 30, "Input"],
-Cell[12361, 271, 11899, 198, 366, "Output"]
+Cell[10743, 241, 1823, 32, 30, "Input"],
+Cell[12569, 275, 11947, 199, 366, "Output"]
 }, Open  ]],
-Cell[24275, 472, 635, 9, 30, "Input"],
-Cell[24913, 483, 312, 4, 30, "Input"],
+Cell[24531, 477, 635, 9, 30, "Input"],
+Cell[25169, 488, 312, 4, 30, "Input"],
 Cell[CellGroupData[{
-Cell[25250, 491, 5960, 142, 221, "Input"],
-Cell[31213, 635, 4471, 85, 532, "Output"]
+Cell[25506, 496, 5960, 142, 221, "Input"],
+Cell[31469, 640, 4511, 86, 532, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[35721, 725, 4996, 130, 240, "Input"],
-Cell[40720, 857, 4329, 83, 532, "Output"]
+Cell[36017, 731, 5041, 130, 240, "Input"],
+Cell[41061, 863, 4339, 83, 532, "Output"]
 }, Open  ]],
-Cell[45064, 943, 164, 2, 30, "Input"],
+Cell[45415, 949, 164, 2, 30, "Input"],
+Cell[45582, 953, 6339, 155, 297, "Input"],
+Cell[51924, 1110, 4517, 88, 574, InheritFromParent],
 Cell[CellGroupData[{
-Cell[45253, 949, 6266, 154, 297, "Input"],
-Cell[51522, 1105, 4688, 90, 550, "Output"]
+Cell[56466, 1202, 4630, 90, 574, InheritFromParent],
+Cell[61099, 1294, 4585, 88, 550, "Output"]
 }, Open  ]],
-Cell[56225, 1198, 558, 14, 88, "Input"],
-Cell[56786, 1214, 92, 1, 30, "Input"]
+Cell[CellGroupData[{
+Cell[65721, 1387, 3036, 75, 240, "Input"],
+Cell[68760, 1464, 788, 18, 79, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69585, 1487, 6058, 153, 335, "Input"],
+Cell[75646, 1642, 293, 5, 45, "Output"],
+Cell[75942, 1649, 293, 5, 45, "Output"],
+Cell[76238, 1656, 295, 5, 45, "Output"],
+Cell[76536, 1663, 4703, 90, 550, "Output"]
+}, Open  ]],
+Cell[81254, 1756, 624, 16, 30, "Input"],
+Cell[CellGroupData[{
+Cell[81903, 1776, 129, 2, 30, InheritFromParent],
+Cell[82035, 1780, 339, 10, 77, "Output"]
+}, Open  ]],
+Cell[82389, 1793, 1225, 28, 88, "Input"],
+Cell[83617, 1823, 87, 1, 50, "Input"]
 }
 ]
 *)
